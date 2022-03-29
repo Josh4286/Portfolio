@@ -21,15 +21,16 @@ const Bar = styled.div`
   backdrop-filter: blur(5px);
   width: 100%;
   color: #fff;
-  height: calc(2rem + 2vmin);
+  height: calc(3rem + 2vmin);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 `;
 
 const Logo = styled.div`
   margin-left: calc(1rem + 4vmin);
-  font-size: calc(0.625rem + 1vmin);
+  font-size: calc(1rem + 1vmin);
 `;
 
 const NavigationLinks = styled.div`
@@ -37,7 +38,7 @@ const NavigationLinks = styled.div`
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  font-size: calc(0.275rem + 1vmin);
+  font-size: calc(0.5rem + 1vmin);
 `;
 
 const Button = styled.button`

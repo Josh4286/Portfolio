@@ -12,10 +12,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      <Technology />
-      <Darkmode />
-      <Lightmode />
-      <Footer />
     </div>
   );
 }
