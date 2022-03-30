@@ -1,13 +1,25 @@
 import styled from "styled-components";
-import character from "../Untitled.svg";
+import { animate, motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
       <Swirly></Swirly>
       <Container>
         <HeroTextContainer>
-          <HeroTextH1>Hi, I'm Josh</HeroTextH1>
-          <HeroTextH2>I enjoy web design</HeroTextH2>
+          <HeroTextH1
+            initial={{ opacity: 0, y: "-10vh" }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Hi, I'm Josh
+          </HeroTextH1>
+          <HeroTextH2
+            initial={{ opacity: 0, y: "-2rem" }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1 }}
+          >
+            I enjoy web design
+          </HeroTextH2>
         </HeroTextContainer>
       </Container>
     </>
@@ -34,13 +46,13 @@ const HeroTextContainer = styled.div`
   z-index: 2;
 `;
 
-const HeroTextH1 = styled.h1`
+const HeroTextH1 = styled(motion.h1)`
   font-size: calc(1em + 6vmin);
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 `;
 
-const HeroTextH2 = styled.h2`
+const HeroTextH2 = styled(motion.h2)`
   font-size: calc(0.725em + 2vmin);
   padding: 0 0 0 0;
 `;
