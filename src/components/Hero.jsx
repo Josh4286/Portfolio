@@ -42,7 +42,7 @@ const Container = styled.div`
 
 const HeroTextContainer = styled.div`
   padding: 1rem 1rem 1rem 1rem;
-  margin: 0 0 0 0;
+  margin: 0 0 20vh 0;
   font-size: 24px;
   z-index: 2;
 `;
