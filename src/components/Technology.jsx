@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import Parallax from "./Parallax";
 
 const Technology = () => {
   return (
     <>
       <Container>
-        <p>These are just some of the technologies I have used</p>
+        <Parallax>
+          <p>These are just some of the technologies I have used</p>
+        </Parallax>
       </Container>
     </>
   );
@@ -13,8 +16,10 @@ const Technology = () => {
 export default Technology;
 
 const Container = styled.div`
-  display: grid;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #1d1d24;
-  min-height: 100vh;
   color: #fff;
 `;

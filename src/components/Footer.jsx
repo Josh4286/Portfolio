@@ -7,7 +7,7 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.div`
-  height: 500px;
-  background: white;
-  z-index: 2;
+  height: 25vh;
+  background: #1d1d24; /* fallback for old browsers */
+  color: #fff;
 `;

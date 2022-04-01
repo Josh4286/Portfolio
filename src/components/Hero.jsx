@@ -28,10 +28,11 @@ const Hero = () => {
 
 export default Hero;
 
+//calc(3rem + 2vmin) is the height of the navbar
 const Container = styled.div`
-  padding: 3rem 0 0 0;
+  margin-top: calc(3rem + 2vmin);
   background: #1d1d24;
-  min-height: 100vh;
+  min-height: calc(100vh - (3rem + 2vmin));
   color: #fff;
   display: flex;
   align-items: center;
@@ -55,12 +56,6 @@ const HeroTextH1 = styled(motion.h1)`
 const HeroTextH2 = styled(motion.h2)`
   font-size: calc(0.725em + 2vmin);
   padding: 0 0 0 0;
-`;
-
-const Portrait = styled.img`
-  grid-area: 3 / 5 / 3 / 7;
-  width: calc(200px + 20vw);
-  z-index: 2;
 `;
 
 const Swirly = styled.div`
