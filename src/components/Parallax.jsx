@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Parallax = ({ children }) => {
+const Parallax = ({ children, value }) => {
   const [offset, setOffset] = useState(0);
   useEffect(() => {
     function handleScroll() {
@@ -14,7 +14,7 @@ const Parallax = ({ children }) => {
   return (
     <div
       style={{
-        transform: `translateY(${offset * 0.1}px)`,
+        transform: `translateY(${offset * value}px)`,
       }}
     >
       {children}

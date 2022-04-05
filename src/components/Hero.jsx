@@ -18,7 +18,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            I enjoy web design
+            I enjoy web development
           </HeroTextH2>
         </HeroTextContainer>
       </Container>
@@ -44,7 +44,7 @@ const HeroTextContainer = styled.div`
   padding: 1rem 1rem 1rem 1rem;
   margin: 0 0 20vh 0;
   font-size: 24px;
-  z-index: 2;
+  z-index: 7;
 `;
 
 const HeroTextH1 = styled(motion.h1)`
@@ -71,7 +71,6 @@ const Swirly = styled.div`
     height: 400vh;
     left: 25%;
     background: #fff;
-    z-index: 1;
   }
 
   &:before {
@@ -82,7 +81,7 @@ const Swirly = styled.div`
       RGBA(84, 8, 53, 0.8) 0%,
       RGBA(8, 30, 84, 0.8) 100%
     );
-
+    z-index: 1;
     animation: animate 10s linear infinite;
   }
   &:after {
@@ -95,7 +94,7 @@ const Swirly = styled.div`
       RGBA(74, 86, 157, 0.9) 46%,
       RGBA(243, 144, 79, 0.9) 100%
     );
-
+    z-index: 6;
     animation: animate 20s linear infinite;
   }
   @keyframes animate {
