@@ -3,7 +3,10 @@ import { animate, motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <Swirly></Swirly>
+      <SwirlyContainer>
+        <Swirly1 />
+        <Swirly2 />
+      </SwirlyContainer>
       <Container>
         <HeroTextContainer>
           <HeroTextH1
@@ -37,7 +40,23 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+`;
+
+const SquareAnimation = styled.div`
+  position: absolute;
+  left: 0;
+  width: ${(props) => props.size}};
+  height: ${(props) => props.size}}
+  border-radius: ${(props) => props.border}};
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 11;
+  animation: animate 10s infinite;
+  animation-delay:${(props) => props.delay}};
+  @keyframes animate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;
 
 const HeroTextContainer = styled.div`
@@ -58,45 +77,19 @@ const HeroTextH2 = styled(motion.h2)`
   padding: 0 0 0 0;
 `;
 
-const Swirly = styled.div`
-  color: #fff;
-  display: grid;
-  height: 0;
+const SwirlyContainer = styled.div`
+  position: relative;
   overflow-x: clip;
-  &:after,
-  &:before {
-    position: relative;
-    content: "";
-    width: 400vh;
-    height: 400vh;
-    left: 25%;
-    background: #fff;
-  }
-
-  &:before {
-    top: -70vh;
-    border-radius: 44%;
-    background-image: linear-gradient(
-      43deg,
-      RGBA(84, 8, 53, 0.8) 0%,
-      RGBA(8, 30, 84, 0.8) 100%
-    );
-    z-index: 1;
-    animation: animate 10s linear infinite;
-  }
-  &:after {
-    top: -475vh;
-    border-radius: 44%;
-    background-color: #e84393;
-    background-image: linear-gradient(
-      43deg,
-      RGBA(220, 36, 36, 0.9) 0%,
-      RGBA(74, 86, 157, 0.9) 46%,
-      RGBA(243, 144, 79, 0.9) 100%
-    );
-    z-index: 6;
-    animation: animate 20s linear infinite;
-  }
+  width: 100%;
+`;
+const Swirly = styled.div`
+  position: absolute;
+  color: #fff;
+  background: #fff;
+  left: 50%;
+  width: 400vh;
+  height: 400vh;
+  background: #fff;
   @keyframes animate {
     0% {
       transform: translate(-50%, -60%) rotate(0deg);
@@ -105,4 +98,29 @@ const Swirly = styled.div`
       transform: translate(-50%, -60%) rotate(360deg);
     }
   }
+`;
+const Swirly1 = styled(Swirly)`
+  top: -82vh;
+  border-radius: 44%;
+  background-image: linear-gradient(
+    43deg,
+    RGBA(84, 8, 53, 0.8) 0%,
+    RGBA(8, 30, 84, 0.8) 100%
+  );
+  z-index: 1;
+  animation: animate 10s linear infinite;
+`;
+
+const Swirly2 = styled(Swirly)`
+  top: -85vh;
+  border-radius: 44%;
+  background-color: #e84393;
+  background-image: linear-gradient(
+    43deg,
+    RGBA(220, 36, 36, 0.9) 0%,
+    RGBA(74, 86, 157, 0.9) 46%,
+    RGBA(243, 144, 79, 0.9) 100%
+  );
+  z-index: 6;
+  animation: animate 20s linear infinite;
 `;

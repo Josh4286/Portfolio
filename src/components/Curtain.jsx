@@ -15,6 +15,7 @@ const Curtain = () => {
 export default Curtain;
 
 const SwitchContainer = styled.div`
+  text-align: left;
   background-image: linear-gradient(
     to bottom,
     var(--color2) 50%,
@@ -31,7 +32,7 @@ const Invert = styled.div`
 /** make the content sticky **/
   position: sticky;
   top: 20px;
-
+  overflow-x: clip;
   /** blend the content with the contrast effect **/
   mix-blend-mode: difference;
 

@@ -1,7 +1,25 @@
 :root {
   --minh: 98vh;
-  --color1: rgb(250, 250, 250);
+  --color1: rgb(240, 240, 240);
   --color2: #1d1d24;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #242424;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 20px;
+  border: 4px solid #242424;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(187, 187, 187) 100%;
 }
 
 .App {
@@ -46,4 +64,16 @@
 
 button {
   font-size: calc(10px + 2vmin);
+  background-color: #c94a24;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #077bf1;
 }

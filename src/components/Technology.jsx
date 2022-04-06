@@ -6,18 +6,14 @@ const Technology = () => {
   return (
     <>
       <Container>
-        <TextContainer>
-          <h2>Full Stack Developer</h2>
-          <ImageContainer>
-            <Image src={group}></Image>
-          </ImageContainer>
-          <Parallax value="">
-            <MiddleText>
-              I studied web development utilising the MERN stack coming from a
-              Java background
-            </MiddleText>
-          </Parallax>
-        </TextContainer>
+        <h2>Full Stack Developer</h2>
+        <ImageContainer>
+          <Image src={group}></Image>
+        </ImageContainer>
+        <MiddleText>
+          I studied web development utilising the MERN stack coming from a Java
+          background
+        </MiddleText>
       </Container>
     </>
   );
@@ -31,21 +27,13 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: left;
   background: #1d1d24;
   color: #fff;
-  position: relative;
-  z-index: 5;
-`;
-
-const TextContainer = styled.div`
-  color: #fff;
-  z-index: 2;
-  position: absolute;
+  overflow-x: hidden;
+  text-align: left;
 `;
 
 const MiddleText = styled.p`
-  padding: 1rem;
   max-width: 80vmin;
 `;
 
