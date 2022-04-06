@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <Card>Feel free to contact me</Card>
     </Container>
   );
@@ -16,6 +16,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: rgb(240, 240, 240);
+  overflow: clip;
 `;
 
 const Card = styled.div`

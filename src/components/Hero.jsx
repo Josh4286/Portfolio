@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { animate, motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <>
@@ -40,6 +41,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: clip;
 `;
 
 const SquareAnimation = styled.div`
@@ -100,7 +102,7 @@ const Swirly = styled.div`
   }
 `;
 const Swirly1 = styled(Swirly)`
-  top: -82vh;
+  top: -90vh;
   border-radius: 44%;
   background-image: linear-gradient(
     43deg,
@@ -112,7 +114,7 @@ const Swirly1 = styled(Swirly)`
 `;
 
 const Swirly2 = styled(Swirly)`
-  top: -85vh;
+  top: -97vh;
   border-radius: 44%;
   background-color: #e84393;
   background-image: linear-gradient(

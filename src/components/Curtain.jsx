@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Curtain = () => {
   return (
-    <SwitchContainer>
+    <SwitchContainer id="design">
       <Invert>
         <CurtainText>
           I enjoy working with both dark and light themes

@@ -5,7 +5,7 @@ import group from "../Group.svg";
 const Technology = () => {
   return (
     <>
-      <Container>
+      <Container id="technology">
         <h2>Full Stack Developer</h2>
         <ImageContainer>
           <Image src={group}></Image>

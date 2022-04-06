@@ -78,7 +78,7 @@ const SocialLink = styled.a`
   color: #fff;
   cursor: pointer;
   &:hover {
-    color: #aa336a;
+    color: #ffa436;
     transition: 0.3s ease-in;
   }
   margin-left: 80px;
