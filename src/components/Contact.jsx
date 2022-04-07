@@ -4,7 +4,9 @@ const Contact = () => {
   return (
     <>
       <Container id="contact">
-        <Card>Feel free to contact me</Card>
+        <Card>
+          <h1>GET IN TOUCH</h1>
+        </Card>
         <WavesContainer>
           <StyledWaves />
         </WavesContainer>
@@ -22,24 +24,21 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  overflow: clip;
+  overflow-x: clip;
 `;
 
 const Card = styled.div`
-  padding: 4rem;
-  background: white;
+  padding: calc(2rem + 2vmin);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
-  min-height: 400px;
-  background-color: #d387ab;
-  color: white;
-  background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
   z-index: 5;
 `;
 
 const WavesContainer = styled.div`
   position: absolute;
   bottom: 0;
-  left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -47,9 +46,9 @@ const WavesContainer = styled.div`
 
 const StyledWaves = styled(waves)`
   position: absolute;
-  height: 100vmax;
-  width: 100vw;
-  left: 0;
+  height: 200vmax;
+  width: 100vmax;
+
   right: 0;
   bottom: 0;
   margin-left: auto;

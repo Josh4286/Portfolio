@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { ReactComponent as ocean } from "../ocean.svg";
 const Curtain = () => {
   return (
     <SwitchContainer id="design">
@@ -26,7 +26,25 @@ const Curtain = () => {
 };
 
 export default Curtain;
+const OceanContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
+const Ocean = styled(ocean)`
+  position: absolute;
+  height: 100vmax;
+  width: 100vmax;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+`;
 const CircleContainer = styled.div`
   position: absolute;
   display: flex;

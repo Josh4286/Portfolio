@@ -35,7 +35,7 @@ const StyledSVGAnimation = styled(SVGAnimation)`
   margin-right: auto;
   height: 100vmin;
   width: 100vmin;
-  filter: hue-rotate(0deg) blur(5pxpx);
+  filter: hue-rotate(0deg) blur(5px);
   mix-blend-mode: color-dodge;
   animation: glide1 infinite 60s linear;
   @keyframes glide1 {
