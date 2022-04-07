@@ -19,17 +19,5 @@ export default Blob;
 
 const BlobImage = styled.div`
   width: calc(1em + 40vmin);
-`;
-
-const BlobBackground = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-const TechLogo = styled.img`
-  width: 50%;
-  height: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  position: absolute;
 `;
