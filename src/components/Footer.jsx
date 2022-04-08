@@ -25,10 +25,12 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.div`
+  position: relative;
   padding: 6rem 0 6rem 0;
   background: #000; /* fallback for old browsers */
   color: #fff;
   overflow: clip;
+  z-index: 5;
 `;
 
 const SocialWrapper = styled.div`

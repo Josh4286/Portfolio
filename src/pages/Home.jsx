@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import Technology from "../components/Technology";
+import About from "../components/About";
 import Footer from "../components/Footer";
 import Curtain from "../components/Curtain";
 import Contact from "../components/Contact";
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Technology />
+      <About />
       <Curtain />
       <Projects />
       <Contact />

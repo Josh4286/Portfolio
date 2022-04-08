@@ -3,28 +3,39 @@ import group from "../Group.svg";
 import { ReactComponent as SVGAnimation } from "../blob.svg";
 import { ReactComponent as SVGAnimation1 } from "../blob1.svg";
 
-const Technology = () => {
+const About = () => {
   return (
     <>
       <BlobContainer>
         <StyledSVGAnimation />
         <StyledSVGAnimation1 />
       </BlobContainer>
-      <Container id="technology">
-        <Headline>Full Stack Developer</Headline>
+      <Container id="about">
+        <LeftColumn>
+          <Headline>About Me</Headline>
+          <MiddleText>
+            My interest in web development started when I created a website in
+            class. Designing the layout and coding the solution engaged my
+            creative and logical thinking.
+          </MiddleText>
+          <MiddleText>
+            I started with basic HTML, CSS and JS then moved on to MVC and OOP
+            with Java.
+          </MiddleText>
+          <MiddleText>
+            I’m currently using the MERN stack but also looking to learn other
+            languages and frameworks.
+          </MiddleText>
+        </LeftColumn>
         <ImageContainer>
           <Image src={group}></Image>
         </ImageContainer>
-        <MiddleText>
-          I studied web development utilising the MERN stack coming from a Java
-          background
-        </MiddleText>
       </Container>
     </>
   );
 };
 
-export default Technology;
+export default About;
 
 const StyledSVGAnimation = styled(SVGAnimation)`
   position: absolute;
@@ -103,29 +114,45 @@ const Container = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: left;
+  padding: 0 10vw 0 10vw;
   background: #1d1d24;
   color: #fff;
   overflow-x: hidden;
   text-align: left;
+  gap: 4rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const LeftColumn = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
 `;
 
 const MiddleText = styled.p`
-  max-width: 80vmin;
+  text-align: left;
   z-index: 7;
+  font-size: calc(0.725rem + 1vmin);
+  padding: 0;
+  margin-top: 0.5rem;
 `;
 
 const Headline = styled.h2`
   text-align: left;
   max-width: 80vmin;
   z-index: 7;
+  font-size: calc(1rem + 2vmin);
+  margin-bottom: 2.5rem;
 `;
 
 const Image = styled.img`
-  padding: 2rem 1rem 2rem 1rem;
-  width: 75vmin;
   z-index: 7;
+  width: 120%;
 `;
 
 const ImageContainer = styled.div`

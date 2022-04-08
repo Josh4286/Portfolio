@@ -5,7 +5,11 @@ const Contact = () => {
     <>
       <Container id="contact">
         <Card>
-          <h1>GET IN TOUCH</h1>
+          <Title>Get In Touch</Title>
+          <Paragraph></Paragraph>
+          <EmailButton href="mailto:joshuawongcy@outlook.com">
+            Say Hello
+          </EmailButton>
         </Card>
         <WavesContainer>
           <StyledWaves />
@@ -23,36 +27,60 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow-x: clip;
 `;
 
 const Card = styled.div`
   padding: calc(2rem + 2vmin);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
+  margin-bottom: 20vh;
+`;
+
+const Title = styled.h1`
+  margin-bottom: 0px;
+`;
+
+const Paragraph = styled.p`
+  max-width: 80vmin;
+  font-size: calc(0.725rem + 0.75vmin);
+  color: #1d1d24;
+`;
+
+const EmailButton = styled.a`
+  font-size: calc(0.725rem + 0.75vmin);
+  color: white;
+  mix-blend-mode: difference;
+  padding: 0.75rem 2rem;
+  background: rgba(255, 169, 63, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  text-decoration: none;
+  outline: none;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const WavesContainer = styled.div`
   position: absolute;
+  left: 0;
   bottom: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
 `;
 
 const StyledWaves = styled(waves)`
   position: absolute;
-  height: 200vmax;
+  height: 100vmax;
   width: 100vmax;
-
-  right: 0;
+  left: 0;
   bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-
   transform: rotate(180deg);
 `;

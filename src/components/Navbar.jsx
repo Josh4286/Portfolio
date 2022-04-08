@@ -121,7 +121,7 @@ const Button = styled(LinkS)`
   color: white;
   border: none;
   padding: 0.5rem 1.5rem;
-  border-radius: 20px;
+  border-radius: 10px;
   text-decoration: none;
   outline: none;
   transition: 0.3s ease-out;

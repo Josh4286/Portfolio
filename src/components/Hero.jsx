@@ -22,7 +22,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            I enjoy web development
+            I enjoy developing on the web
           </HeroTextH2>
         </HeroTextContainer>
       </Container>
