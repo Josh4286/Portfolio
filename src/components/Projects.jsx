@@ -7,8 +7,8 @@ export const Projects = () => {
       <Title>Ecommerce App</Title>
       <EcommerceApp>
         <Images>
-          <EcommerceCart src={ecommerceCart} />
-          <EcommerceFront src={ecommerceFront} />
+          <EcommerceCart src={ecommerceCart} alt="Ecommerce Cart Page" />
+          <EcommerceFront src={ecommerceFront} alt="Ecommerce Product List" />
         </Images>
         <Content>
           <h4>Project Features</h4>
@@ -53,7 +53,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh-60px);
+  min-height: calc(100vh - 60px);
   overflow-x: clip;
 `;
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { animate, motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,20 +9,8 @@ const Hero = () => {
       </SwirlyContainer>
       <Container>
         <HeroTextContainer>
-          <HeroTextH1
-            initial={{ opacity: 0, y: "-10vh" }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Hi, I'm Josh
-          </HeroTextH1>
-          <HeroTextH2
-            initial={{ opacity: 0, y: "-2rem" }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
-          >
-            I enjoy developing on the web
-          </HeroTextH2>
+          <HeroTextH1>Hi, I'm Josh</HeroTextH1>
+          <HeroTextH2>I enjoy developing on the web</HeroTextH2>
         </HeroTextContainer>
       </Container>
     </>
@@ -32,33 +19,16 @@ const Hero = () => {
 
 export default Hero;
 
-//calc(3rem + 2vmin) is the height of the navbar
+//60px is the height of the navbar
 const Container = styled.div`
-  margin-top: calc(3rem + 2vmin);
+  margin-top: 60px;
   background: #1d1d24;
-  min-height: calc(100vh - (3rem + 2vmin));
+  min-height: calc(100vh - 60px);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: clip;
-`;
-
-const SquareAnimation = styled.div`
-  position: absolute;
-  left: 0;
-  width: ${(props) => props.size}};
-  height: ${(props) => props.size}}
-  border-radius: ${(props) => props.border}};
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  z-index: 11;
-  animation: animate 10s infinite;
-  animation-delay:${(props) => props.delay}};
-  @keyframes animate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 `;
 
 const HeroTextContainer = styled.div`
@@ -68,13 +38,13 @@ const HeroTextContainer = styled.div`
   z-index: 7;
 `;
 
-const HeroTextH1 = styled(motion.h1)`
+const HeroTextH1 = styled.h1`
   font-size: calc(1em + 6vmin);
   margin: 0 0 0 0;
   padding: 0 0 0 0;
 `;
 
-const HeroTextH2 = styled(motion.h2)`
+const HeroTextH2 = styled.h2`
   font-size: calc(0.725em + 2vmin);
   padding: 0 0 0 0;
 `;

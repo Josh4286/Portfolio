@@ -16,11 +16,11 @@ const About = () => {
             <Headline>About Me</Headline>
             <MiddleText>
               Hi, my name is Josh and I enjoy creating things on the web. I like
-              experimenting with different designs and finding ways to improve
-              my dev skills.
+              experimenting with different designs and finding new ways to
+              improve my dev skills.
             </MiddleText>
             <MiddleText>
-              I've studied programming fundamentals in Java, such as Object
+              I've studied programming fundamentals in Java such as Object
               Oriented Programming and the Model View Controller architecture.
             </MiddleText>
             <MiddleText>
@@ -33,7 +33,7 @@ const About = () => {
             </MiddleText>
           </LeftColumn>
           <ImageContainer>
-            <Image src={group}></Image>
+            <Image src={group} alt="Joshua's Tech Stack"></Image>
           </ImageContainer>
         </Content>
       </Container>
