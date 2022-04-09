@@ -11,25 +11,31 @@ const About = () => {
         <StyledSVGAnimation1 />
       </BlobContainer>
       <Container id="about">
-        <LeftColumn>
-          <Headline>About Me</Headline>
-          <MiddleText>
-            My interest in web development started when I created a website in
-            class. Designing the layout and coding the solution engaged my
-            creative and logical thinking.
-          </MiddleText>
-          <MiddleText>
-            I started with basic HTML, CSS and JS then moved on to MVC and OOP
-            with Java.
-          </MiddleText>
-          <MiddleText>
-            I’m currently using the MERN stack but also looking to learn other
-            languages and frameworks.
-          </MiddleText>
-        </LeftColumn>
-        <ImageContainer>
-          <Image src={group}></Image>
-        </ImageContainer>
+        <Content>
+          <LeftColumn>
+            <Headline>About Me</Headline>
+            <MiddleText>
+              Hi, my name is Josh and I enjoy creating things on the web. I like
+              experimenting with different designs and finding ways to improve
+              my dev skills.
+            </MiddleText>
+            <MiddleText>
+              I've studied programming fundamentals in Java, such as Object
+              Oriented Programming and the Model View Controller architecture.
+            </MiddleText>
+            <MiddleText>
+              From the design side, I've studied user interaction design and
+              tried my hand at simple illustrations and wireframes using Figma.
+            </MiddleText>
+            <MiddleText>
+              I'm currently using the MERN stack but also looking to learn other
+              languages and frameworks.
+            </MiddleText>
+          </LeftColumn>
+          <ImageContainer>
+            <Image src={group}></Image>
+          </ImageContainer>
+        </Content>
       </Container>
     </>
   );
@@ -111,18 +117,26 @@ const BlobContainer = styled.div`
 `;
 
 const Container = styled.div`
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d1d24;
+`;
+
+const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: left;
-  padding: 0 10vw 0 10vw;
-  background: #1d1d24;
+  padding: 0 4rem;
   color: #fff;
   overflow-x: hidden;
   text-align: left;
   gap: 4rem;
+  max-width: 1280px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 0 2rem;
   }
 `;
 
@@ -132,6 +146,7 @@ const LeftColumn = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: left;
+  padding-right: 2rem;
 `;
 
 const MiddleText = styled.p`
@@ -148,6 +163,7 @@ const Headline = styled.h2`
   z-index: 7;
   font-size: calc(1rem + 2vmin);
   margin-bottom: 2.5rem;
+  color: rgba(255, 169, 63, 1);
 `;
 
 const Image = styled.img`

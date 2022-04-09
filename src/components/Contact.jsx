@@ -23,7 +23,7 @@ export default Contact;
 
 const Container = styled.div`
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +74,7 @@ const WavesContainer = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: -1;
 `;
 
 const StyledWaves = styled(waves)`

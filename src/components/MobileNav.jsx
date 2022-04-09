@@ -20,7 +20,7 @@ const MobileNav = ({ isOpen, toggle }) => {
               spy={true}
               exact="true"
               onClick={toggle}
-              offset={-40}
+              offset={-60}
             >
               {item.title}
             </MobileLinks>
@@ -36,6 +36,7 @@ const MobileNav = ({ isOpen, toggle }) => {
             spy={true}
             exact="true"
             onClick={toggle}
+            offset={-60}
           >
             Contact Me
           </Button>

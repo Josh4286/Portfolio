@@ -84,7 +84,7 @@ const SwitchContainer = styled.div`
   &:after {
     content: "";
     display: block;
-    min-height: var(--minh);
+    min-height: calc(100vh - 60px);
   }
 `;
 
@@ -100,9 +100,9 @@ const Invert = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   /** set the minimum height of the section **/
-  min-height: var(--minh);
+  min-height: calc(100vh - 60px);
 }
 `;
 

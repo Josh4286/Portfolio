@@ -25,8 +25,7 @@ const Navbar = ({ toggle }) => {
             smooth={true}
             duration={500}
             spy={true}
-            exact="true"
-            offset={0}
+            offset={-60}
           >
             {item.title}
           </NavLinks>
@@ -38,8 +37,7 @@ const Navbar = ({ toggle }) => {
           smooth={true}
           duration={500}
           spy={true}
-          exact="true"
-          offset={0}
+          offset={-60}
         >
           Contact Me
         </Button>
@@ -57,7 +55,7 @@ const Bar = styled.div`
   backdrop-filter: blur(5px);
   width: 100%;
   color: #fff;
-  height: calc(3rem + 2vmin);
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,12 +92,13 @@ const NavLinks = styled(LinkS)`
   padding: 0 2rem;
   font-size: calc(0.5rem + 0.6vmin);
   cursor: pointer;
-  height: calc(3rem + 2vmin);
+  height: 60px;
   &:hover {
     transition: 0.3s ease-in;
+    background: rgba(255, 255, 255, 0.2);
   }
   &.active {
-    border-bottom: 3px solid #f26a2e;
+    border-bottom: 3px solid rgba(255, 169, 63, 1);
   }
 `;
 
