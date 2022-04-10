@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as waves } from "../waves.svg";
+import { ReactComponent as waves } from "../assets/waves.svg";
 const Contact = () => {
   return (
     <>
@@ -23,7 +23,6 @@ export default Contact;
 
 const Container = styled.div`
   position: relative;
-  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +36,7 @@ const Card = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 5;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 `;
 
 const Title = styled.h1`

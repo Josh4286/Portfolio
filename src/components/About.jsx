@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import group from "../Group.svg";
-import { ReactComponent as SVGAnimation } from "../blob.svg";
-import { ReactComponent as SVGAnimation1 } from "../blob1.svg";
+import group from "../assets/techStack.svg";
+import { ReactComponent as SVGAnimation } from "../assets/blob.svg";
+import { ReactComponent as SVGAnimation1 } from "../assets/blob1.svg";
 
 const About = () => {
   return (

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
-import MobileNav from "./components/MobileNav";
+import Navbar from "./components/navbar/Navbar";
+import MobileNav from "./components/navbar/MobileNav";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);

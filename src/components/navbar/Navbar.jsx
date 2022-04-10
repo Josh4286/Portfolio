@@ -20,6 +20,7 @@ const Navbar = ({ toggle }) => {
       <NavigationLinksContainer>
         {menuData.map((item, index) => (
           <NavLinks
+            href={item.link}
             to={item.link}
             key={index}
             smooth={true}
@@ -34,12 +35,14 @@ const Navbar = ({ toggle }) => {
       <CTAContainer>
         <Button
           to="contact"
+          target="_blank"
+          href="../resume.pdf"
           smooth={true}
           duration={500}
           spy={true}
           offset={-60}
         >
-          Contact Me
+          View Resume
         </Button>
       </CTAContainer>
     </Bar>
@@ -98,7 +101,7 @@ const NavLinks = styled(LinkS)`
     background: rgba(255, 255, 255, 0.2);
   }
   &.active {
-    border-bottom: 3px solid rgba(255, 169, 63, 1);
+    border-bottom: 3px solid #eb9226;
   }
 `;
 
@@ -114,7 +117,7 @@ const CTAContainer = styled.div`
   }
 `;
 
-const Button = styled(LinkS)`
+const Button = styled.a`
   font-size: calc(0.5rem + 0.6vmin);
   background-color: #c94a24;
   color: white;

@@ -26,7 +26,7 @@ export default Footer;
 
 const Container = styled.div`
   position: relative;
-  padding: 6rem 0 6rem 0;
+  padding: 3rem 0 3rem 0;
   background: #000; /* fallback for old browsers */
   color: #fff;
   overflow: clip;
@@ -47,12 +47,6 @@ const SocialLink = styled.a`
     color: #ffa436;
     transition: 0.3s ease-in;
   }
-  margin-left: 80px;
-  margin-right: 80px;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+  margin-left: 10vw;
+  margin-right: 10vw;
 `;
