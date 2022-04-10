@@ -3,9 +3,9 @@ export const projectData = [
     title: "Ecommerce App",
     description:
       "Personal project that is still a work in progress. I created it to learn NextJS and how to integrate PayPal to handle payments. Users can currently add and remove cart items, register, login, and create an order through PayPal. Future planned features include Maps API to validate delivery address and phone number validation. Admin panel still to be developed.",
-    frontImg: "../../assets/ecommerceFront.png",
+    frontImg: "ecommerceFront",
     frontImgAlt: "Ecommerce Product List",
-    backImg: "../../assets/ecommerceCart.png",
+    backImg: "ecommerceBack",
     backImgAlt: "Ecommerce Cart Page",
     features: [
       "Backend API using Next Connect and MongoDB to handle user authentication, product and order details",
