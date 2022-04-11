@@ -38,7 +38,7 @@ const MobileNav = ({ isOpen, toggle }) => {
             onClick={toggle}
             offset={-60}
           >
-            Contact Me
+            View Resume
           </Button>
         </MobileBtnWrap>
       </MobileWrapper>

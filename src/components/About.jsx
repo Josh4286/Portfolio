@@ -128,7 +128,7 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: left;
-  padding: 0 4rem;
+  padding: 4rem 4rem;
   color: #fff;
   overflow-x: hidden;
   text-align: left;
@@ -136,7 +136,7 @@ const Content = styled.div`
   max-width: 1280px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
   }
 `;
 
@@ -168,7 +168,7 @@ const Headline = styled.h2`
 
 const Image = styled.img`
   z-index: 7;
-  width: 120%;
+  width: 100%;
 `;
 
 const ImageContainer = styled.div`
