@@ -15,9 +15,10 @@ export const projectData = [
       "State management with React Context API",
       "Cart data and theme preference stored in cookies",
       "Dark and Light theme",
+      "STILL A WORK IN PROGRESS WITH ISSUES - you can read these from my repo's readme",
     ],
     github: "https://github.com/Josh4286/next-ecommerce",
-    live: "",
+    live: "https://joshuawongecommerce.netlify.app/",
   },
   {
     title: "Portfolio Website",
