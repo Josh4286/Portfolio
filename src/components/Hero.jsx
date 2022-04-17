@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Hero = () => {
   return (
-    <>
+    <div id="hero">
       <SwirlyContainer>
         <Swirly1 />
         <Swirly2 />
@@ -13,7 +13,7 @@ const Hero = () => {
           <HeroTextH2>I enjoy developing on the web</HeroTextH2>
         </HeroTextContainer>
       </Container>
-    </>
+    </div>
   );
 };
 

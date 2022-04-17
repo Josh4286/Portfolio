@@ -28,14 +28,12 @@ const MobileNav = ({ isOpen, toggle }) => {
         </MobileMenu>
         <MobileBtnWrap>
           <Button
-            primary="true"
-            round="true"
             to="contact"
+            target="_blank"
+            href="../resume.pdf"
             smooth={true}
             duration={500}
             spy={true}
-            exact="true"
-            onClick={toggle}
             offset={-60}
           >
             View Resume
@@ -118,7 +116,7 @@ const MobileMenu = styled.div`
   }
 `;
 
-const Button = styled(LinkS)`
+const Button = styled.a`
   border-radius: 50px;
   background: #f26a2e;
   white-space: nowrap;

@@ -1,19 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
-import { animateScroll as scroll } from "react-scroll";
 import { menuData } from "./MenuData";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = ({ toggle }) => {
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
   return (
     <Bar>
-      <Logo to="/" onClick={toggleHome}>
-        JW
-      </Logo>
+      <LogoContainer>
+        <Logo
+          href="hero"
+          to="hero"
+          key="hero"
+          smooth={true}
+          duration={500}
+          spy={true}
+          offset={-60}
+        >
+          JW
+        </Logo>
+      </LogoContainer>
+
       <MobileIcon onClick={toggle}>
         <FaBars />
       </MobileIcon>
@@ -65,14 +72,20 @@ const Bar = styled.div`
   z-index: 100;
 `;
 
-const Logo = styled(LinkS)`
+const LogoContainer = styled.div`
   display: flex;
   align-items: left;
   margin-left: calc(1rem + 4vmin);
   margin-right: calc(1rem + 4vmin);
   font-size: calc(1rem + 1vmin);
-  cursor: pointer;
+  color: #fff;
   width: 100%;
+`;
+
+const Logo = styled(LinkS)`
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 `;
 
 const NavigationLinksContainer = styled.div`

@@ -7,7 +7,6 @@ import oldPortfolioBack from "../../assets/oldPortfolioBack.png";
 import oldPortfolioFront from "../../assets/oldPortfolioFront.png";
 import Project from "./Project";
 export const Projects = () => {
-  console.log(projectData[0]);
   return (
     <Container id="projects">
       {/* {projectData.map((app, index) => {
